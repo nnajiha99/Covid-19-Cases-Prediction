@@ -22,6 +22,22 @@ The datasets were downloaded from https://github.com/MoH-Malaysia/covid19-public
 
 ## Details of Steps
 
+Import all packages
+
+            from tensorflow import keras
+            from keras.utils import plot_model
+            from sklearn.preprocessing import MinMaxScaler
+            from tensorflow.keras.callbacks import TensorBoard
+            from sklearn.model_selection import train_test_split
+            from tensorflow.keras.layers import Dense, LSTM, Dropout
+            from tensorflow.keras import Sequential, callbacks, applications
+            from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error
+
+            import numpy as np
+            import pandas as pd
+            import os, datetime
+            import matplotlib.pyplot as 
+
 - Data Loading
     
     Load the cases_malaysia_train.csv dataset.
